@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{37474F}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+% \addbibresource{sample.bib}
+
+\begin{document}
+\name{Lorrana Verdi Flores}
+\tagline{Bioinformata}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{perfil}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+    \email{lorrana.vf@gmail.com}
+    % \phone{(35) 99827-3814}
+    \location{Lavras, MG}
+    \linkedin{linkedin.com/in/lorranaflores}
+    \github{https://lorranavf.github.io/}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Experiências Profissionais}
+
+\cvevent{UFLA}{Pesquisadora}{Abril 2021 -- Atual}{Lavras, MG}
+\begin{itemize}
+    \item Desenvolvimento de uma Plataforma de Descoberta de Genes de interesse agronômicos utilizando técnicas de Machine Learning e Integração de Dados Genômicos.
+    \item Desenvolvimento de uma Plataforma de Apoio à Descoberta de Genes Pesticidas em um Programa de Prospecção de cepas da bactéria \textit{Bacillus thuringiensis}.
+    \item Desenvolvimento de Pipelines de Identificação e Caracterização de Genes.
+    \item Prospecção de transcritos codificadores de enzimas envolvidas no metabolismo de quitina no transcritoma da formiga cortadeira Atta sexdens.
+    \item Montagem do transcritoma da formiga cortadeira \textit{Atta sexdens}.
+    \item Análise de expressão gênica de bibliotecas públicas de RNA-Seq de \textit{Solanum lycopersicum}.
+    \item Prospecção de genes candidatos (WUSCHEL e BBM) em \textit{Eucalyptus grandis}.
+\end{itemize}
+
+\vspace{10px}
+
+\cvevent{Instituto Mato-Grossense do Algodão}{Téccnico de Laboratório}{Setembro 2016-- Janeiro 2021}{Rondonópolis, MT}
+\begin{itemize}
+    \item Gerenciamento do Laboratório de Transformação Genética.
+    \item Treinamento de pessoas.
+    \item Controle de demandas de manutenção.
+    \item Controle de estoques e pedidos.
+    \item Planejamento e execução de experimentos de transformação genética de algodão. \\
+\end{itemize}
+
+\vspace{10px}
+
+\cvsection{Educação}
+
+\cvevent{Universidade Federal de Lavras}{Doutorado em Biotecnologia Vegetal}{Fevereiro 2023 -- Atual}{Lavras, MG}
+\begin{itemize} 
+    \item Trabalho em andamento: Desenvolvimento de uma plataforma de descobrimento de Genes.
+    \item Linhas de Pesquisa: Genômica regulatória, Integração multi-ômica, Desenvolvimento de modelos preditivos.
+    \item Área de atuação: Bioinformática. 
+\end{itemize} 
+
+\vspace{10px}
+
+\cvevent{Universidade Federal de Lavras}{Mestrado em Biotecnologia Vegetal}{Abril 2021 -- Jan 2023}{Lavras, MG}
+\begin{itemize} 
+    \item Trabalho final: Prospecção de transcritos codificadores de quitinases em dados de RNA-seq da formiga cortadeira \textit{Atta sexdens}.
+    \item Linha de Pesquisa: Análise Genômica e Funcional.
+    \item Área de atuação: Bioinformática. 
+\end{itemize} 
+
+\clearpage
+
+\end{document}
